@@ -60,6 +60,6 @@ function logData($type, $vpn, $ip, $provider, $country, $region, $city) {
 
 } 
 function showMap($LA, $LO) {
-     echo '<iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=' . $LO .  ' %2C' . $LA .  ' %2C' . $LO .  ' %2C' . $LA .  ' &amp;layer=mapnik" style="border: 1px solid black"></iframe>';
+     echo '<iframe width="100%" height="450" src="https://www.openstreetmap.org/export/embed.html?bbox=' . $LO .  ' %2C' . $LA .  ' %2C' . $LO .  ' %2C' . $LA .  ' &amp;layer=mapnik" style="border: 1px solid black"></iframe>';
 }
 ?>

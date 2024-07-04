@@ -1,7 +1,6 @@
 <?php
 # Use env file
 require("functions.php");
-$env = parse_ini_file('.env');
 
 # Get IP from user
 if (!empty($_SERVER['HTTP_CLIENT_IP'])) {

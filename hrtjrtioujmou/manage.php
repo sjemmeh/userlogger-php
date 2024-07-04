@@ -26,6 +26,9 @@
                 }
                 else if(array_key_exists('resetmysql', $_POST)) {
                     resetMySQL(); 
+                }
+                else if(array_key_exists('resettext', $_POST)) {
+                    resetText(); 
                 } 
                 else if(array_key_exists('read', $_POST)) { 
                     read(); 
@@ -39,6 +42,8 @@
                     <input type="submit" name="resetsqlite" value="Reset Database" /> 
                 <?php } else if ($env['LOG_TYPE'] == 'mysql') { ?>
                     <input type="submit" name="resetmysql" value="Reset Database" /> 
+                <?php } else if ($env['LOG_TYPE'] == 'text') { ?>
+                    <input type="submit" name="resettext" value="Reset Database" /> 
                 <?php } ?>
             </form> 
         </div>

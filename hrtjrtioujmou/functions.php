@@ -41,6 +41,11 @@ function resetSQLite() {
     }
 }
 
+function resetText() {
+    global $env; #messy?
+    $FILE = '../' . $env["TEXT_FILE"];
+    fclose(fopen($FILE,'w'));
+}
 function resetMySQL() {
     global $env; #messy?
 
@@ -125,7 +130,7 @@ function read() {
         break;
     
         case "text":
-            $FILE = file_get_contents($env["TEXT_FILE"]);
+            $FILE = file_get_contents('../' .$env["TEXT_FILE"]);
             echo $FILE;
         break;
     }

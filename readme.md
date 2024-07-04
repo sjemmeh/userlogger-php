@@ -29,4 +29,4 @@ MYSQL_PASS=""
 MSQL_DB=""
 ```
 
-### If you want to use sqlite, run the dev/create_sqlite.php command once.
+### If you want to use sqlite, open the manage.php page and create the database from there.
